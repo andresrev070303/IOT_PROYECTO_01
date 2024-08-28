@@ -99,6 +99,6 @@ void loop() {
   double distance = sensor.readUltrasonicDistance();
   Serial.print(distance);
   Serial.println("cm");
-  delay(1000); // Wait for 100 millisecond(s)
+  delay(400); // Wait for 100 millisecond(s)
   manageLEDs(distance, red, white, blue);
 }
